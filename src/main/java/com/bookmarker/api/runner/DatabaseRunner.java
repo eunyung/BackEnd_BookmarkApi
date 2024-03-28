@@ -19,10 +19,12 @@ public class DatabaseRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        log.info("DataSource 구현객체는 = {} ", dataSource.getClass().getName());
+        log.info(">>>>>DataSource 구현객체는 = {} ", dataSource.getClass().getName());
         try (Connection connection = dataSource.getConnection()) {
-            log.info("DB URL = {}", connection.getMetaData().getURL());
-            log.info("DB Username = {}", connection.getMetaData().getUserName());
+            log.info(">>>>>DB vendor = {}", connection.getMetaData().getDatabaseProductName());
+            log.info(">>>>>DB URL = {}", connection.getMetaData().getURL());
+            log.info(">>>>>DB Username = {}", connection.getMetaData().getUserName());
+
         }
     }
 }
