@@ -8,10 +8,10 @@ public class BookmarkMapper {
 
     public BookmarkDTO toDTO(Bookmark bookmark) {
         return new BookmarkDTO(
-            bookmark.getId(),
-            bookmark.getTitle(),
-            bookmark.getUrl(),
-            bookmark.getCreatedAt()
+                bookmark.getId(),
+                bookmark.getTitle(),
+                bookmark.getUrl(),
+                bookmark.getCreatedAt()
         );
     }
 }
