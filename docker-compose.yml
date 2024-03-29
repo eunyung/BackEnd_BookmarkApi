@@ -14,7 +14,7 @@ services:
     image: tark1234/springbootnextjs:0.3
     container_name: bookmark-api
     ports:
-      - "8080:8080"
+      - "18080:8080"
     restart: always
     depends_on:
       - bookmark-db

@@ -34,7 +34,7 @@ jobs:
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
           image: tark1234/springbootnextjs
-          tags: 0.3
+          tags: 0.4
           registry: docker.io
           dockerfile: Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}

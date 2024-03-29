@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import java.time.Instant;
 import java.util.List;
 
-@Profile("local")
+@Profile("test")
 @Component
 @RequiredArgsConstructor
 public class DataInitializer implements CommandLineRunner {
